@@ -1,5 +1,6 @@
 package mue.com.webapitutorial;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,4 +23,18 @@ public class MainActivity extends AppCompatActivity {
         // TODO, create the task to call the REST API
 
     }
+    private class CallAPI extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            return "";
+
+        }
+
+        protected void onPostExecute(String result) {
+
+        }
+
+    } // end CallAPI
 }
